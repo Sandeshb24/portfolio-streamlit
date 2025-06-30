@@ -4,3 +4,7 @@ pandas
 numpy
 scikit-learn
 seaborn
+requests
+time
+streamlit_lottie
+PIL
