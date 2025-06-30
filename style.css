@@ -1,0 +1,65 @@
+/* Basic styling for the contact form */
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #f8f8f8; /* Light background */
+    color: #333; /* Dark text */
+    font-family: 'Roboto', sans-serif; /* Use a common font */
+}
+
+button[type=submit] {
+    background-color: #4CAF50; /* Green submit button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button[type=submit]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Streamlit button specific styling (Applies to all st.button) */
+.stButton button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition and slight scale */
+}
+
+.stButton button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Custom class for social links */
+.social-links a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Essential for transform to work */
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Adjust Streamlit's default container padding if needed */
+.stApp {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
